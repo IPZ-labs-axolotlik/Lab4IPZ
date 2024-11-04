@@ -24,10 +24,9 @@ public class Triangle implements GraphicObject {
      * @param y3        The y-coordinate of the third vertex.
      */
     public Triangle(String color, int thickness, int x1, int y1, int x2, int y2, int x3, int y3) {
-        LineType lineType = LineFactory.getLineType(color, thickness);
-        lines.add(new Line(lineType, x1, y1, x2, y2));
-        lines.add(new Line(lineType, x2, y2, x3, y3));
-        lines.add(new Line(lineType, x3, y3, x1, y1));
+        lines.add(new Line(color, thickness, x1, y1, x2, y2));
+        lines.add(new Line(color, thickness, x2, y2, x3, y3));
+        lines.add(new Line(color, thickness, x3, y3, x1, y1));
     }
 
     @Override

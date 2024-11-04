@@ -22,11 +22,10 @@ public class Rectangle implements GraphicObject {
      * @param height    The height of the rectangle.
      */
     public Rectangle(String color, int thickness, int x1, int y1, int width, int height) {
-        LineType lineType = LineFactory.getLineType(color, thickness);
-        lines.add(new Line(lineType, x1, y1, x1 + width, y1));
-        lines.add(new Line(lineType, x1 + width, y1, x1 + width, y1 + height));
-        lines.add(new Line(lineType, x1 + width, y1 + height, x1, y1 + height));
-        lines.add(new Line(lineType, x1, y1 + height, x1, y1));
+        lines.add(new Line(color, thickness, x1, y1, x1 + width, y1));
+        lines.add(new Line(color, thickness, x1 + width, y1, x1 + width, y1 + height));
+        lines.add(new Line(color, thickness, x1 + width, y1 + height, x1, y1 + height));
+        lines.add(new Line(color, thickness, x1, y1 + height, x1, y1));
     }
 
     @Override

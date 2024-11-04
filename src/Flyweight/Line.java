@@ -15,14 +15,15 @@ public class Line implements GraphicObject {
      * The Line constructor initializes a line with specified coordinates and line type.
      * It sets up the line's start and end points for drawing.
      *
-     * @param type The type of the line, defining color and thickness.
-     * @param x1   The x-coordinate of the starting point.
-     * @param y1   The y-coordinate of the starting point.
-     * @param x2   The x-coordinate of the ending point.
-     * @param y2   The y-coordinate of the ending point.
+     * @param color     The color of the rectangle's lines.
+     * @param thickness The thickness of the rectangle's lines.
+     * @param x1        The x-coordinate of the starting point.
+     * @param y1        The y-coordinate of the starting point.
+     * @param x2        The x-coordinate of the ending point.
+     * @param y2        The y-coordinate of the ending point.
      */
-    public Line(LineType type, int x1, int y1, int x2, int y2) {
-        this.type = type;
+    public Line(String color, int thickness, int x1, int y1, int x2, int y2) {
+        this.type = LineFactory.getLineType(color, thickness);
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
