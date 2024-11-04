@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Flyweight</OriginalElement>
+  <nodes>
+    <node x="-228.75" y="328.75">Flyweight.LineType</node>
+    <node x="108.62499999999989" y="201.5">Flyweight.LineFactory</node>
+    <node x="-228.75" y="201.5">Flyweight.FlyweightObject</node>
+    <node x="-500.75" y="573.0">Flyweight.Triangle</node>
+    <node x="-204.03125000000003" y="773.25">Flyweight.GraphicObject</node>
+    <node x="-69.56250000000006" y="573.0">Flyweight.Rectangle</node>
+    <node x="108.62499999999989" y="328.75">Flyweight.Line</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Flyweight.Rectangle" target="Flyweight.Line" relationship="TO_MANY">
+      <point x="136.5" y="15.0" />
+      <point x="256.625" y="639.0" />
+      <point x="30.000000000000114" y="97.0" />
+    </edge>
+    <edge source="Flyweight.Triangle" target="Flyweight.Line" relationship="TO_MANY">
+      <point x="-15.0" y="-51.0" />
+      <point x="-361.75" y="513.0" />
+      <point x="-108.0" y="513.0" />
+      <point x="-108.0" y="491.5" />
+      <point x="-117.99999999999989" y="65.75" />
+    </edge>
+    <edge source="Flyweight.LineFactory" target="Flyweight.FlyweightObject" relationship="TO_MANY">
+      <point x="-150.875" y="-24.0" />
+      <point x="94.5" y="0.0" />
+    </edge>
+    <edge source="Flyweight.Triangle" target="Flyweight.GraphicObject" relationship="REALIZATION">
+      <point x="154.0" y="0.0" />
+      <point x="-123.0" y="624.0" />
+      <point x="-123.0" y="692.5" />
+      <point x="-123.03125000000003" y="692.5" />
+      <point x="0.0" y="-27.0" />
+    </edge>
+    <edge source="Flyweight.Line" target="Flyweight.LineType" relationship="TO_ONE">
+      <point x="-118.0" y="-34.5" />
+      <point x="94.5" y="0.0" />
+    </edge>
+    <edge source="Flyweight.LineType" target="Flyweight.FlyweightObject" relationship="REALIZATION">
+      <point x="0.0" y="-62.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="Flyweight.Rectangle" target="Flyweight.GraphicObject" relationship="REALIZATION">
+      <point x="-129.0" y="51.0" />
+      <point x="60.96874999999997" y="-27.0" />
+    </edge>
+    <edge source="Flyweight.Triangle" target="Flyweight.Line" relationship="CREATE">
+      <point x="0.0" y="-51.0" />
+      <point x="-346.75" y="548.0" />
+      <point x="226.625" y="548.0" />
+      <point x="1.1368683772161603E-13" y="97.0" />
+    </edge>
+    <edge source="Flyweight.Rectangle" target="Flyweight.Line" relationship="CREATE">
+      <point x="136.5" y="0.0" />
+      <point x="241.625" y="624.0" />
+      <point x="15.000000000000114" y="97.0" />
+    </edge>
+    <edge source="Flyweight.LineFactory" target="Flyweight.LineType" relationship="CREATE">
+      <point x="-150.875" y="20.5" />
+      <point x="-119.25" y="273.0" />
+      <point x="15.0" y="-62.5" />
+    </edge>
+    <edge source="Flyweight.Line" target="Flyweight.GraphicObject" relationship="REALIZATION">
+      <point x="-117.99999999999989" y="50.75" />
+      <point x="-123.0" y="476.5" />
+      <point x="-123.0" y="692.5" />
+      <point x="-123.03125000000003" y="692.5" />
+      <point x="0.0" y="-27.0" />
+    </edge>
+  </edges>
+  <settings layout="Compact" zoom="0.8000000000000002" showDependencies="true" x="-5.5" y="538.0" />
+  <SelectedNodes>
+    <node>Flyweight.Rectangle</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
